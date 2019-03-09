@@ -1,13 +1,4 @@
 {
-  "extends": [
-    "tslint:recommended",
-    "tslint-react"
-  ],
-  "rules": {
-    "one-line": [
-      true,
-      "check-open-brace",
-      "check-whitespace"
-    ]
-  }
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {}
 }

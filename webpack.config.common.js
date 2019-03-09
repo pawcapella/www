@@ -24,9 +24,12 @@ module.exports = {
             presets: [
               '@babel/react',
               '@babel/typescript',
-              ['@babel/env', {
-                "modules": false,
-              }],
+              [
+                '@babel/env',
+                {
+                  modules: false,
+                },
+              ],
             ],
           },
         },
@@ -34,7 +37,7 @@ module.exports = {
       },
       {
         test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$|\.webmanifest$|\.xml$/,
-        loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
+        loader: 'file-loader?name=[name].[ext]', // <-- retain original file name
       },
     ],
   },
@@ -43,10 +46,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
-    extensions: [
-      '.js',
-      '.ts',
-      '.tsx',
-    ]
+    extensions: ['.js', '.ts', '.tsx'],
   },
 };

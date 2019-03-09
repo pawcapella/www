@@ -9,15 +9,13 @@ module.exports = merge(common, {
     hot: true,
     contentBase: path.resolve(__dirname, 'dist'),
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'react-hot-loader/webpack'
-      }
-    ]
-  }
+        use: 'react-hot-loader/webpack',
+      },
+    ],
+  },
 });
