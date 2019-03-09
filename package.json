@@ -8,7 +8,8 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
     "build": "webpack --config ./webpack.config.prod.js --progress --colors",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "lint": "tslint 'src/**/*.{ts,tsx}'"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -26,6 +27,8 @@
     "react-hot-loader": "^4.8.0",
     "react-snap": "^1.23.0",
     "style-loader": "^0.23.1",
+    "tslint": "^5.13.1",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.3.3333",
     "uglifyjs-webpack-plugin": "^1.3.0",
     "webpack": "^3.12.0",
