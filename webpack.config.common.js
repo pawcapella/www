@@ -32,6 +32,10 @@ module.exports = {
         },
         exclude: /node_modules/,
       },
+      {
+        test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$|\.webmanifest$|\.xml$/,
+        loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
+      },
     ],
   },
   output: {
