@@ -681,14 +681,14 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@css-blocks/core@^0.20.0-beta.7":
-  version "0.20.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@css-blocks/core/-/core-0.20.0-beta.7.tgz#1da50816d6d1f542c9d80e31abf7cbe315b586fd"
-  integrity sha512-exbVDFL9l7HdjIDgY5QHy+xXehY+R91bbWMvyHBTQOKA+CDX9Q4ToANIO9uGvbHBOFumcSRZl5B74klW/Sp9JQ==
+"@css-blocks/core@^0.19.0":
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/@css-blocks/core/-/core-0.19.0.tgz#89cb5584b09ffb2dbbb597570ccc7a6e32eb4839"
+  integrity sha1-ictVhLCf+y27tZdXDMx6bjLrSDk=
   dependencies:
-    "@opticss/element-analysis" "^0.4.0"
-    "@opticss/template-api" "^0.4.0"
-    "@opticss/util" "^0.4.0"
+    "@opticss/element-analysis" "^0.3.0"
+    "@opticss/template-api" "^0.3.0"
+    "@opticss/util" "^0.3.0"
     "@types/async" "^2.0.40"
     "@types/debug" "0.0.29"
     async "^2.5.0"
@@ -697,46 +697,46 @@
     inline-source-map-comment "^1.0.5"
     json-parse-better-errors "^1.0.1"
     object.values "^1.0.4"
-    opticss "^0.4.0"
+    opticss "^0.3.0"
     regexpu-core "^4.0.11"
     source-map "^0.6.1"
     watch "^1.0.2"
 
-"@css-blocks/jsx@^0.20.0-beta.7":
-  version "0.20.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@css-blocks/jsx/-/jsx-0.20.0-beta.7.tgz#a0ef7edbb3adaa990e318855b4cc7927e40703af"
-  integrity sha512-evN7YMnU85+EM0Z30dq3ZrBW1V11CvKu76kjIQhADzb/y7duRInf5j9ZTQ+Z2QXDWWxSuMJcGmaURYPGxczBrQ==
+"@css-blocks/jsx@^0.19.0":
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/@css-blocks/jsx/-/jsx-0.19.0.tgz#23e4228489bd6b935f8b3cee513209552cae146f"
+  integrity sha1-I+QihIm9a5NfizzuUTIJVSyuFG8=
   dependencies:
-    "@css-blocks/core" "^0.20.0-beta.7"
-    "@opticss/template-api" "^0.4.0"
-    "@opticss/util" "^0.4.0"
+    "@css-blocks/core" "^0.19.0"
+    "@opticss/template-api" "^0.3.0"
+    "@opticss/util" "^0.3.0"
     babel-traverse "7.0.0-beta.3"
     babel-types "7.0.0-beta.3"
     babylon "7.0.0-beta.46"
     debug "^2.6.8"
     minimatch "^3.0.4"
     object.values "^1.0.4"
-    opticss "^0.4.0"
+    opticss "^0.3.0"
 
-"@css-blocks/runtime@^0.20.0-beta.7":
-  version "0.20.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@css-blocks/runtime/-/runtime-0.20.0-beta.7.tgz#982ca1d18578d33559754d4a6e02cf9f61e43619"
-  integrity sha512-jzOTEpZhOsT20JZvtFN3bAzHAETuXAfxV61tOTUL0PrvnbpQ7sOdFFSU/ZEmqXtDj8jqLA5K+e8Osm2oxTh6GA==
+"@css-blocks/runtime@^0.18.0":
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/@css-blocks/runtime/-/runtime-0.18.0.tgz#9a6caf07f1074867d46807c4a2843d5418332122"
+  integrity sha1-mmyvB/EHSGfUaAfEooQ9VBgzISI=
 
-"@css-blocks/webpack@^0.20.0-beta.7":
-  version "0.20.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@css-blocks/webpack/-/webpack-0.20.0-beta.7.tgz#c9eea2ebadfae5a085927e1e9d102d71cb6744ea"
-  integrity sha512-utQfkxrYNFh2zinddwXa7Z8o3Ep3O/88eX+v/GaxhgLYrQxrPQZMqUtt9tnIU1RWQ+mRdyakrc4ZnVemEvHG2A==
+"@css-blocks/webpack@^0.19.0":
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/@css-blocks/webpack/-/webpack-0.19.0.tgz#249baf91c5a173303e187d64b0d90b850c857f95"
+  integrity sha1-JJuvkcWhczA+GH1ksNkLhQyFf5U=
   dependencies:
-    "@css-blocks/core" "^0.20.0-beta.7"
-    "@opticss/element-analysis" "^0.4.0"
-    "@opticss/template-api" "^0.4.0"
+    "@css-blocks/core" "^0.19.0"
+    "@opticss/element-analysis" "^0.3.0"
+    "@opticss/template-api" "^0.3.0"
     async "^2.4.1"
     convert-source-map "^1.5.0"
     debug "^2.6.8"
     install "^0.10.1"
     loader-utils "^1.0.1"
-    opticss "^0.4.0"
+    opticss "^0.3.0"
     source-map "^0.6.1"
     tapable "^0.2.5"
     webpack-sources "^1.0.1"
@@ -878,27 +878,27 @@
     "@types/istanbul-lib-coverage" "^1.1.0"
     "@types/yargs" "^12.0.9"
 
-"@opticss/element-analysis@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@opticss/element-analysis/-/element-analysis-0.4.0.tgz#3eb75ffe843d33a1f2d318ab930aa7a9868ce43a"
-  integrity sha512-0so33rBBtytYhdDqnzHKeXBG6SJTXF8s/l0llU325RBAcN3X0aJFWVfvE2bzN97YiQTvXsyuB+eQe/rh7j2vTQ==
+"@opticss/element-analysis@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@opticss/element-analysis/-/element-analysis-0.3.0.tgz#1a6406c644c4b034a0ad74964c0f1e70523dbce5"
+  integrity sha512-afds/n1fyI0MgAXCV6Gze4ZmhVt9Aff6SX8sIvFKSEYCpL76Nf2EjUkRXjK4CJWsgKxsVtPk6khJC+u3ch4O6w==
   dependencies:
-    "@opticss/util" "^0.4.0"
+    "@opticss/util" "^0.3.0"
 
-"@opticss/template-api@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@opticss/template-api/-/template-api-0.4.0.tgz#041ef183e4fc3c6f280a8e2a9d4d5db10fae0237"
-  integrity sha512-FopZ4xg64AbOrkV1r/DQNwnbqtCWU82piNT7iTQId9QGsWoK/iOfesA/xnLiCYXtrvULal8evxlD59Ylhao48w==
+"@opticss/template-api@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@opticss/template-api/-/template-api-0.3.0.tgz#e95f57b3da427f2d241d3ef781d7713df53bb731"
+  integrity sha512-Ig8HgF+t3J7txZXUiMYAp0PGNoZ0Qe8Tr+CRjwEsFlONGQCEVsrC4nIbK2V0zmUC8kLlAD4AXHo9rhuYHtULRg==
   dependencies:
-    "@opticss/element-analysis" "^0.4.0"
-    "@opticss/util" "^0.4.0"
+    "@opticss/element-analysis" "^0.3.0"
+    "@opticss/util" "^0.3.0"
     postcss "^6.0.21"
     typescript-collections "^1.2.5"
 
-"@opticss/util@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@opticss/util/-/util-0.4.0.tgz#a035174b012ff5712e5f1e65ec96a1ef052e4224"
-  integrity sha512-6OBsgYgscHArkv+nvDOA4t8emV7g8d/AA7sbeVpQ6och29yQZY+bPLdcDRP41FJObgExVR1VMtpJcgL1jxN56Q==
+"@opticss/util@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@opticss/util/-/util-0.3.0.tgz#5f07028be01de8798feff842587ca98acb2251a2"
+  integrity sha512-eVKOVxf9Wp/NgTy00rKIcxuqDSPdimfuPNwYcAiL/vJvG0jcjS5SZ5b9NiRytTIOcqG1+AX6jqdyLSU39eraDQ==
   dependencies:
     typescript-collections "^1.2.5"
 
@@ -5732,6 +5732,11 @@ oauth-sign@~0.9.0:
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
   integrity sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
 
+obj-str@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/obj-str/-/obj-str-1.0.3.tgz#5a583dfd41b2fab71e5ba0363fa43c62146bcb5a"
+  integrity sha512-H2iS63dYEH2I/XPkBDsT2ywkZKqJl6xc7XqKLqjJVrSqSjT4AJy7N9yy7/Z3pNUD5iLwHmZCareOhoegC28N9w==
+
 object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -5862,14 +5867,14 @@ opn@^5.1.0:
   dependencies:
     is-wsl "^1.1.0"
 
-opticss@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/opticss/-/opticss-0.4.0.tgz#b9d86af439926f243247d2bdceea967d76dfd2ed"
-  integrity sha512-3VoZlNj8vPYyb1k3KSffBR/Fbx9upSAosYL/As4w5hJbIDrQi3GplFaWLelxWGEYTEDCWMBOb1FSYAOOLZTPlg==
+opticss@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/opticss/-/opticss-0.3.0.tgz#cf68c5bc9b9591ae7d5f159415550bd924c346b6"
+  integrity sha512-ZT1rDy9VnWmduoO66S4PgKxuDFxDbhksQXuHKvKioy0HzZxwq/Bi16GNTylE6cBen4MYMej1vU4tKvEH/2vB6w==
   dependencies:
-    "@opticss/element-analysis" "^0.4.0"
-    "@opticss/template-api" "^0.4.0"
-    "@opticss/util" "^0.4.0"
+    "@opticss/element-analysis" "^0.3.0"
+    "@opticss/template-api" "^0.3.0"
+    "@opticss/util" "^0.3.0"
     "@types/debug" "0.0.29"
     concat-with-sourcemaps "^1.0.4"
     css-property-parser "^1.0.5"
@@ -5878,7 +5883,6 @@ opticss@^0.4.0:
     postcss "^6.0.21"
     postcss-selector-parser "^4.0.0"
     source-map "^0.6.1"
-    source-map-support "^0.5.3"
     specificity "^0.3.2"
     typescript-collections "^1.2.5"
     typescript-memoize "^1.0.0-alpha.3"
@@ -7277,7 +7281,7 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.3, source-map-support@^0.5.6:
+source-map-support@^0.5.6:
   version "0.5.10"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
   integrity sha512-YfQ3tQFTK/yzlGJuX8pTwa4tifQj4QS2Mj7UegOu8jAz59MqIiMGPXxQhVQiIMNzayuUSF/jEuVnfFF5JqybmQ==
@@ -7561,14 +7565,6 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
-
-style-loader@^0.23.1:
-  version "0.23.1"
-  resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-0.23.1.tgz#cb9154606f3e771ab6c4ab637026a1049174d925"
-  integrity sha512-XK+uv9kWwhZMZ1y7mysB+zoihsEj4wneFWAS5qoiLwzW0WzSqMrrsIy+a3zkQJq0ipFtBpX5W3MqyRIBF/WFGg==
-  dependencies:
-    loader-utils "^1.1.0"
-    schema-utils "^1.0.0"
 
 sum-up@^1.0.1:
   version "1.0.3"
