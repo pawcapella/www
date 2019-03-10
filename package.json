@@ -9,7 +9,8 @@
     "start": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
     "build": "webpack --config ./webpack.config.prod.js --progress --colors",
     "postbuild": "react-snap",
-    "lint": "tslint 'src/**/*.{ts,tsx}'"
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -19,17 +20,25 @@
     "@css-blocks/jsx": "^0.20.0-beta.7",
     "@css-blocks/runtime": "^0.20.0-beta.7",
     "@css-blocks/webpack": "^0.20.0-beta.7",
+    "@types/enzyme": "^3.9.0",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.11",
     "@types/webpack-env": "^1.13.9",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^2.0.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^1.3.1",
+    "jest": "^24.3.1",
     "prettier": "1.16.4",
     "pretty-quick": "^1.10.0",
     "react-hot-loader": "^4.8.0",
     "react-snap": "^1.23.0",
+    "react-test-renderer": "^16.8.4",
     "style-loader": "^0.23.1",
+    "ts-jest": "^24.0.0",
     "tslint": "^5.13.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-react": "^3.6.0",
@@ -50,11 +59,20 @@
     "last 2 version",
     "> 1%",
     "not dead",
-    "not ie < 11"
+    "not ie > 0"
   ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/test-setup.ts"
+    ],
+    "testRegex": "(/tests/.*|\\.?test)\\.tsx?$",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
     }
   },
   "prettier": {
