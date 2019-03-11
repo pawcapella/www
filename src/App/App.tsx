@@ -6,5 +6,5 @@ export default function App() {
   const style = objstr({
     [styles]: true,
   });
-  return <h1 class={style}>Hello world!</h1>;
+  return <h1 className={style}>Hello world!</h1>;
 }

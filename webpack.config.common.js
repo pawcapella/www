@@ -1,8 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const CssBlocks = require('@css-blocks/jsx');
-const CssBlocksPlugin = require('@css-blocks/webpack').CssBlocksPlugin;
+const { Analyzer, Rewriter } = require('@css-blocks/jsx');
+const { CssBlocksPlugin } = require('@css-blocks/webpack');
 
 if (process.env.NODE_ENV == null) {
   process.env.NODE_ENV = 'development';
@@ -22,11 +22,8 @@ const jsxCompilationOptions = {
   aliases: {},
 };
 
-const CssBlockRewriter = new CssBlocks.Rewriter(jsxCompilationOptions);
-const CssBlockAnalyzer = new CssBlocks.Analyzer(
-  entryPoint,
-  jsxCompilationOptions
-);
+const rewriter = new Rewriter(jsxCompilationOptions);
+const analyzer = new Analyzer(entryPoint, jsxCompilationOptions);
 
 module.exports = {
   entry: {
@@ -39,7 +36,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CssBlocksPlugin({
-      analyzer: CssBlockAnalyzer,
+      analyzer,
       outputCssFile: 'blocks.css',
       name: 'css-blocks',
       compilationOptions: jsxCompilationOptions.compilationOptions,
@@ -78,7 +75,7 @@ module.exports = {
               plugins: [
                 require('@css-blocks/jsx/dist/src/transformer/babel').makePlugin(
                   {
-                    rewriter: CssBlockRewriter,
+                    rewriter,
                   }
                 ),
               ],
@@ -92,8 +89,8 @@ module.exports = {
           {
             loader: require.resolve('@css-blocks/webpack/dist/src/loader'),
             options: {
-              analyzer: CssBlockAnalyzer,
-              rewriter: CssBlockRewriter,
+              analyzer,
+              rewriter,
             },
           },
         ],
