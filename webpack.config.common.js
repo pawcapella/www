@@ -4,10 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const { Analyzer, Rewriter } = require('@css-blocks/jsx');
 const { CssBlocksPlugin } = require('@css-blocks/webpack');
 
-if (process.env.NODE_ENV == null) {
-  process.env.NODE_ENV = 'development';
-}
-
 const entryPoint = './src/index.tsx';
 
 const jsxCompilationOptions = {

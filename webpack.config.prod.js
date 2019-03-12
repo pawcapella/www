@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV == null) {
+  process.env.NODE_ENV = 'production';
+}
+
 const merge = require('webpack-merge');
 const common = require('./webpack.config.common.js');
 const webpack = require('webpack');
