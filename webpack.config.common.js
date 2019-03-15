@@ -7,6 +7,7 @@ const { CssBlocksPlugin } = require('@css-blocks/webpack');
 const entryPoint = './src/index.tsx';
 
 const jsxCompilationOptions = {
+  aliases: {},
   compilationOptions: {},
   optimization: {
     rewriteIdents: true,
@@ -15,11 +16,11 @@ const jsxCompilationOptions = {
     conflictResolution: true,
     enabled: process.env.NODE_ENV === 'production',
   },
-  aliases: {},
+  // types: 'typescript',
 };
 
 const rewriter = new Rewriter(jsxCompilationOptions);
-const analyzer = new Analyzer(entryPoint, jsxCompilationOptions);
+const analyzer = new Analyzer(jsxCompilationOptions);
 
 module.exports = {
   entry: {

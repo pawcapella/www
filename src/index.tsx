@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { hydrate, render } from 'react-dom';
-import App from './App';
+import App from './App/App';
 
 import '../public/android-chrome-192x192.png';
 import '../public/android-chrome-512x512.png';

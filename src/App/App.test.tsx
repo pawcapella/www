@@ -7,7 +7,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import App from '.';
+import App from './App';
 
 it('renders the app', () => {
   expect(shallow(<App />)).toBeTruthy();
